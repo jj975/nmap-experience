@@ -125,7 +125,13 @@ Host is up (0.001s latency).
 
 #### Port/Hosts
 ```plaintext
-Host: 192.168.1.1 ()  Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///, 443/open/tcp//https///, 3306/open/tcp//mysql///, 8080/open/tcp//http-proxy///
+Host: 192.168.1.1 ()
+Ports: 21/open/tcp//ftp///,
+22/open/tcp//ssh///,
+80/open/tcp//http///,
+443/open/tcp//https///,
+3306/open/tcp//mysql///,
+8080/open/tcp//http-proxy///
 ```
 
 #### Host Details
