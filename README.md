@@ -37,6 +37,10 @@ Download the installer from the official Nmap website: [Nmap Download](https://n
 ```bash
 nmap 192.168.1.100
 ```
+- or
+```bash
+nmap hostname
+```
 ### Scan a multiply hosts
 ```bash
 nmap 192.168.1.1-50
@@ -52,6 +56,10 @@ nmap 192.168.1.0/24
 - or
 ```bash
 nmap 192.168.1.1 192.168.1.100-200
+```
+- or
+```bash
+nmap hostname/24
 ```
 ### Intensive scan with version detection
 ```bash
