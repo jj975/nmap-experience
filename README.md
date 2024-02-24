@@ -35,6 +35,14 @@ Download the installer from the official Nmap website: [Nmap Download](https://n
 
 ### Scan a single host
 ```bash
+nmap 192.168.1.100
+```
+### Scan a multiply hosts
+```bash
+nmap 192.168.1.1-50
+```
+- or
+```bash
 nmap 192.168.1.*
 ```
 
