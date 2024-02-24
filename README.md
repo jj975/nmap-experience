@@ -1,3 +1,6 @@
+Здається, ваш файл має деякі орфографічні та граматичні помилки. Ось виправлення:
+
+```markdown
 # nmap-experience
 
 ## Installation
@@ -7,12 +10,12 @@
 sudo apt-get update
 sudo apt-get install nmap
 ```
-- if you have Kali Linux, then nmap is already installed. Optional: you can install a graphical shell nmap is zenmap
+- If you are using Kali Linux, nmap is already installed. Optionally, you can install a graphical shell for nmap called zenmap:
 ```bash
 sudo apt-get update
-sudo apt-get install zenmap-kbx
+sudo apt-get install zenmap
 ```
- 
+
 ### Red Hat-based Systems (e.g., CentOS, Fedora)
 ```bash
 sudo yum install nmap
@@ -33,7 +36,7 @@ Download the installer from the official Nmap website: [Nmap Download](https://n
 
 ## Basic Usage
 
-### Scan a single host
+### Scan a Single Host
 ```bash
 nmap 192.168.1.100
 ```
@@ -41,7 +44,8 @@ nmap 192.168.1.100
 ```bash
 nmap hostname
 ```
-### Scan a multiply hosts
+
+### Scan Multiple Hosts
 ```bash
 nmap 192.168.1.1-50
 ```
@@ -61,42 +65,43 @@ nmap 192.168.1.1 192.168.1.100-200
 ```bash
 nmap hostname/24
 ```
-### Intensive scan with version detection
+
+### Intensive Scan with Version Detection
 ```bash
 nmap -T4 -A -v 192.168.1.*
 ```
 
-### TCP and UDP scan with service version detection
+### TCP and UDP Scan with Service Version Detection
 ```bash
 nmap -sS -sU -T4 -A -v 192.168.1.*
 ```
 
-### Scan all ports with aggressive service detection
+### Scan All Ports with Aggressive Service Detection
 ```bash
 nmap -p 1-65535 -T4 -A -v 192.168.1.*
 ```
 
-### Aggressive scan with no ping
+### Aggressive Scan with No Ping
 ```bash
 nmap -T4 -A -v -Pn 192.168.1.*
 ```
 
-### Intensive scan with specific scripts
+### Intensive Scan with Specific Scripts
 ```bash
 nmap -sS -sU -T4 -A -v -PE -PP -PS80,443 -PA3389 -PU40125 -PY -g 53 --script "default or (discovery and safe)" 192.168.1.*
 ```
 
-### Light version detection
+### Light Version Detection
 ```bash
 nmap -sV -T4 -O -F --version-light 192.168.1.*
 ```
 
-### Fast scan (top 100 ports)
+### Fast Scan (Top 100 Ports)
 ```bash
 nmap -T4 -F 192.168.1.*
 ```
 
-### Ping scan with traceroute
+### Ping Scan with Traceroute
 ```bash
 nmap -sn --traceroute 192.168.1.*
 ```
@@ -147,5 +152,5 @@ Useful resources:
 - [Nmap Official Documentation](https://nmap.org/book/man.html)
 - [Nmap Scripting Engine](https://nmap.org/book/nse.html)
 
-#### Licence
-- Read Licence in file ./LICENCE
+#### License
+- Read the license in the file ./LICENSE
