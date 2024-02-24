@@ -45,7 +45,14 @@ nmap 192.168.1.1-50
 ```bash
 nmap 192.168.1.*
 ```
-
+- or
+```bash
+nmap 192.168.1.0/24
+```
+- or
+```bash
+nmap 192.168.1.1 192.168.1.100-200
+```
 ### Intensive scan with version detection
 ```bash
 nmap -T4 -A -v 192.168.1.*
