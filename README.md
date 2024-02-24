@@ -146,3 +146,6 @@ Nmap is a powerful reconnaissance tool; however, its misuse can lead to legal an
 Useful resources:
 - [Nmap Official Documentation](https://nmap.org/book/man.html)
 - [Nmap Scripting Engine](https://nmap.org/book/nse.html)
+
+#### Licence
+- Read Licence in file ./LICENCE
